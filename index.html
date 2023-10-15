@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Move</title>
+</head>
+<body>
+    
+    <div class="hero">
+        <header class="header flex justify-between align-center">
+            <a class="text-secundary logo flex align-center" href="/">Movie<span>Tracker</span></a>
+
+            <nav class="navbar flex gap-4 d-none">
+                <a class="active" href="/">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="shows.html">Tv Shows</a>
+                <a href="upcoming.html">Upcoming</a>
+            </nav>
+
+            <button class="unset cursor-pointer bg-transparent text-white btn-showSidebar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <form class="flex align-center form-search d-none" action="search.html">
+                <input class="unset" type="search" name="search" id="search" placeholder="Search movie, tv show, etc...">
+                <button class="unset" type="submit">
+                    
+                    <img class="width-2" src="img/search.png" alt="img searcg">
+                </button>
+            </form>
+
+
+            <aside class="sidebar">
+                <nav class="navbar nav-sidebar flex mt-4">
+                    <a class="active" href="/">Home</a>
+                    <a href="movies.html">Movies</a>
+                    <a href="shows.html">Tv Shows</a>
+                    <a href="upcoming.html">Upcoming</a>
+                </nav>
+
+                <button class="unset btn-closeSidebar cursor-pointer">
+                    <i class="fa-solid fa-circle-xmark text-white"></i>
+                </button>
+            </aside>
+
+
+        </header>
+
+
+       <div class="container">
+            <div class="hero-content">
+                <h2 class="my-2">Find your Movies, TVs Shows, & More in one place!</h2>
+                <h3 class="mt-4">Updated exclusive new content every week</h3>
+
+                <a class="btn" href="#">Explore Now</a>
+            </div>
+       </div>
+
+    </div>
+
+
+    <main class="main container">
+
+        <section class="premier section">
+            <h2>Now Playing</h2>
+            <div class="movies" id="now_playing">
+
+            </div>
+        </section>
+
+
+        <section class="premier section">
+            <h2>Coming Soon</h2>
+            <div class="movies" id="upcoming">
+
+            </div>
+        </section>
+
+
+
+        <section class="section ad">
+            <img class="border-radius" src="img/ad.jpg" alt="ad img">
+
+            <div class="ad-info">
+                <h2>Buy your favorite upcoming movie tickets with us!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, aspernatur perspiciatis deleniti voluptatum tempora sint distinctio natus at rem consectetur sapiente impedit inventore, quos dignissimos ipsa beatae tenetur earum dolor.</p>
+                <a  class="btn" href="#">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p class="text-center">Copyright © 2021. All Rights Reserved By  <span class="text-secundary">MovieTracker</span> </p>
+    </footer>
+    <script type="module" src="scripts/script.js"></script>
+</body>
+</html>
